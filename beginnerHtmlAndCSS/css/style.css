@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/bg.jpg);
+    font-family: 'Roboto', sans-serif;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Estilo para o conteúdo */
+.container {
+    position: relative; /* Define a posição relativa para o container */
+    height: 100vh; /* Define a altura do container como 100% da altura da viewport */
+    display: flex; /* Define o layout do container como flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+.content {
+    text-align: center; /* Centraliza o texto dentro do container */
+    color: #ffffff; /* Define a cor do texto como branco */
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive; /* Define a fonte do título */
+    font-size: 48px; /* Define o tamanho do título */
+    margin-bottom: 20px; /* Adiciona margem inferior ao título */
+}
+
+p {
+    font-size: 24px; /* Define o tamanho do parágrafo */
+    margin-bottom: 20px; /* Adiciona margem inferior ao parágrafo */
+}
+/* Estilo para o menu */
+.menu-wrap {
+    position: fixed; /* Define a posição fixa para o menu */
+    top: 10px; /* Define a distância de 10 pixels do topo */
+    left: 0; /* Alinha o menu à esquerda */
+    width: 100%; /* Define a largura do menu como 100% */
+    z-index: 1000; /* Define a ordem de empilhamento do menu */
+    background-color: rgba(34, 34, 34, 0.8); /* Define a cor de fundo com 80% de opacidade */
+    padding: 10px 0; /* Adiciona preenchimento na parte superior e inferior */
+   /* border-bottom: 3px solid #fff; /* Adiciona uma borda sólida na parte inferior */
+}
+
+.menu-wrap .toggler {
+    display: none; /* Oculta o elemento de alternância do menu */
+}
+
+.menu-wrap .menu {
+    display: flex; /* Define o layout do menu como flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.menu-wrap .menu ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento da lista */
+    margin: 0; /* Remove a margem da lista */
+    display: flex; /* Define o layout da lista como flexível */
+}
+
+.menu-wrap .menu ul li {
+    margin-right: 20px; /* Adiciona margem à direita de cada item da lista */
+}
+
+.menu-wrap .menu ul li:last-child {
+    margin-right: 0; /* Remove a margem à direita do último item da lista */
+}
+
+.menu-wrap .menu ul li a {
+    text-decoration: none; /* Remove a decoração do link */
+    color: #fff; /* Define a cor do texto */
+    font-size: 18px; /* Define o tamanho da fonte */
+    padding: 10px 20px; /* Adiciona preenchimento ao redor do texto */
+    transition: color 0.3s ease; /* Adiciona uma transição suave à cor do texto */
+}
+
+.menu-wrap .menu ul li a:hover {
+    color: #dc9703; /* Define a cor do texto ao passar o mouse */
+}
